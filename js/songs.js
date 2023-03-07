@@ -1,23 +1,23 @@
 export const songs = [
     {
-        src: './songs\Kobaryo - Villain Virus ( feat. Camellia ).mpeg',
+        src: 'Kobaryo  - Villain Virus ( feat. Camellia ) (320 kbps).mp3',
         name: 'Kobaryo - Villain Virus ( feat. Camellia )',
-        url: 'https://i1.sndcdn.com/artworks-rJADLBiYahxDlFOo-TOucfw-t500x500.jpg',
+        coverUrl: 'https://i1.sndcdn.com/artworks-rJADLBiYahxDlFOo-TOucfw-t500x500.jpg',
     },
     {
-        src: '',
+        src: 'Neon Genesis Evangelion - Fly me to the moon. (320 kbps).mp3',
         name: 'Neon Genesis Evangelion - Fly me to the moon',
-        url: 'https://criticalhits.com.br/wp-content/uploads/2022/03/mwp4rxbl91w61.png',
+        coverUrl: 'https://i1.sndcdn.com/artworks-000127407953-bj78x8-t500x500.jpg',
     },
     {
-        src: '',
+        src: 'Athena & smle - Moment [Monstercat Release] (320 kbps).mp3',
         name: 'Athena & smle - Moment [Monstercat Release]',
-        url: 'https://static.wikia.nocookie.net/monstercat/images/c/cd/MCS1416_Moment.jpg/revision/latest?cb=20220630114758',
+        coverUrl: 'https://i1.sndcdn.com/artworks-ggCvIocfeH7sE3Re-mn2kfQ-t500x500.jpg',
     },
     {
-        src: '',
+        src: "PSYQUI - don't you want me ft. Such (320 kbps).mp3",
         name: 'PSYQUI - don`t you want me ft. Such',
-        url: 'https://i.ytimg.com/vi/SRmhjkqfCmM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBPMu9-Jsff8VMtQFb3a_L3BxCcxg',
+        coverUrl: 'https://assets.audiomack.com/phototsynthesis/94d1adaa93d89253ea1e441c00aafd071fb61e8570fae19d3ca3515e3156b3ae.jpeg?width=1000&height=1000&max=true',
     }
 ]
 

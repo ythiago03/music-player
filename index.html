@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/index.js" type="module"></script>
     <title>Music Player</title>
 </head>
 <body>
-     
+     <main>
+        <section class="card">
+            <div class="card-cover">
+                <img class="card-img" src="" alt="Card Cover">
+            </div>
+
+            <h1 class="card-name">Kobaryo - Villain Virus ( feat. Camellia )</h1>
+            
+            
+            <audio class="card-player" src=""></audio>
+            <div class="card-controls">
+                <button class="prevBtn">
+                    <span class="material-symbols-outlined">skip_previous</span>
+                </button>   
+
+                <button class="playPauseBtn">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                </button>
+                
+                <button class="nextBtn">
+                    <span class="material-symbols-outlined">skip_next</span>
+                </button>
+            </div>
+
+            <div class="card-progress_bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="card-time">
+                <span class="current-time">0:00</span>
+                <span class="time">0:00</span>
+            </div>
+        </section>
+     </main>
 </body>
 </html>
