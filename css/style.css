@@ -78,11 +78,11 @@ main{
     height: 5px;
     background-color: #ffffff2d;
     border: 3px;
+    cursor: pointer;
 }
 
 .progress{
     height: 100%;
-    width: 30%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -92,11 +92,10 @@ main{
 .progress::after{
     content: '';
     display: block;
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     background-color: white;
     border-radius: 50%;
-    
 }
 
 .card-time{

@@ -26,6 +26,7 @@ const playPause = () => {
         cardPlayer.pause()
         playPauseBtn.innerHTML = playBtnIcon
     }
+    cardPlayer.ontimeupdate = () => updateTime()
 }
 
 const updateTime = () => {
@@ -44,32 +45,37 @@ const updateTime = () => {
     const progressDuration = durationFormatted ? (cardPlayer.currentTime / durationFormatted) * 100 : 0;
 
     progress.style.width = progressDuration + '%'
+
+    if(cardPlayer.currentTime == cardPlayer.duration){
+        changeMusic()
+    }
 }
 
 const formatZero = (n) => n < 10 ? "0" + n: n;
 
-cardPlayer.ontimeupdate = () => updateTime()
+progressBar.onclick = (event) => {
+    const newTime = (event.offsetX / progressBar.offsetWidth) * cardPlayer.duration;
+    cardPlayer.currentTime = newTime
+}
+
+
+
 
 const changeMusic = (type = 'next') => {
-    if(type == 'next' && musicIndex + 1 === songs.length || type == 'init'){
+    if(type === 'next' && musicIndex + 1 === songs.length || type === 'init'){
         musicIndex = 0;
-    }else if(type == 'prev' && musicIndex === 0){
+    }else if(type == 'prev' && musicIndex == 0){
         musicIndex = songs.length
     }else {
-        musicIndex = type == 'prev' && musicIndex ? musicIndex - 1 : musicIndex + 1; 
+        musicIndex = type === 'prev'? musicIndex - 1 : musicIndex + 1; 
     }    
 
     cardPlayer.src = songs[musicIndex].src
     cardName.innerHTML = songs[musicIndex].name
     cardImg.src = songs[musicIndex].coverUrl
-    if(type !== 'init') playPause();  
-    
+    if(type !== 'init') playPause()
     updateTime()
 }
-
-
-
-
 
 changeMusic('init')
 
