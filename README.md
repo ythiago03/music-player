@@ -2,7 +2,7 @@
 
 <p align="center"> Reprodutor de músicas. </p>
 
-<img src="https://user-images.githubusercontent.com/" alt="Capa do projeto">
+![Capa do projeto](./player.png)
 
 <p align="center">
     <a href="#sobre">sobre</a> •
